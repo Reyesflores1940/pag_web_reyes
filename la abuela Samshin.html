@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terror Oriental - Abuela Samshin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #faf4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #130707;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 3em;
+      color: #ff4500;
+      text-shadow: 2px 2px 5px #000000;
+    }
+    section {
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+      transition: transform 0.3s;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    .button {
+      background-color: #ff4500;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 1em;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .button:hover {
+      background-color: #ffffff;
+      color: #ff4500;
+    }
+    .hidden-info {
+      display: none;
+      margin-top: 20px;
+    }
+    .show-info {
+      display: block;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      max-width: calc(33.33% - 20px);
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c2c2c;
+      margin-top: 20px;
+    }
+    a {
+      color: #ff4500;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #ff4500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Abuela Samshin</h1>
+  </header>
+  <section>
+    <p>
+      La "Abuela Samshin" es una figura importante en la mitología coreana y en la cultura popular de Corea. También conocida como "Samshin Halmoni" en coreano, se la considera la diosa de la fertilidad y el parto. Su nombre "Samshin" se deriva de las palabras coreanas "sam" que significa "tres" y "shin" que significa "espíritu" o "divinidad", lo que sugiere que está compuesta por tres espíritus.
+    </p>
+    <p>
+      Según la creencia popular, la Abuela Samshin es la protectora de las mujeres embarazadas y los niños pequeños. Se cree que vigila y cuida a las mujeres durante el embarazo, ayudándolas a tener un parto seguro y saludable. También se dice que vela por el bienestar de los niños, protegiéndolos de enfermedades y peligros.
+    </p>
+    <img src="samshin.jpg" alt="Abuela Samshin">
+    <div class="interactive">
+      <button class="button" onclick="toggleInfo()">Más Información</button>
+      <div id="additional-info" class="hidden-info">
+        <h2>Rituales y Prácticas</h2>
+        <p>
+          En la cultura coreana, se realizan varios rituales y prácticas para honrar a la Abuela Samshin y solicitar su protección y bendiciones. Durante el embarazo, las mujeres suelen colocar una imagen de la Abuela Samshin en su habitación y realizar ofrendas de comida y oraciones para asegurar un parto seguro. Después del nacimiento, se llevan a cabo ceremonias de agradecimiento y celebración en honor a la Abuela Samshin, donde se le ofrecen diversos regalos y se le pide protección continua para el recién nacido.
+        </p>
+        <h2>Importancia Cultural</h2>
+        <p>
+          La figura de la Abuela Samshin es profundamente venerada en la sociedad coreana y su influencia se extiende a través de generaciones. Su papel como protectora de la maternidad y la infancia la convierte en una figura querida y respetada en la cultura coreana, y su presencia sigue siendo relevante en la vida cotidiana de muchas personas en Corea hasta el día de hoy.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <a href="proyecto.html">Regresa a la página principal</a>
+    <p>&copy; Todos los derechos reservados</p>
+  </footer>
+  <script>
+    function toggleInfo() {
+      var info = document.getElementById('additional-info');
+      info.classList.toggle('hidden-info');
+      info.classList.toggle('show-info');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terror Oriental - Hanako-san</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #8b0000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #ff4500;
+    }
+    h1 {
+      margin: 0;
+      font-size: 3em;
+      color: #ffa500;
+      text-shadow: 2px 2px 5px #000000;
+    }
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+    }
+    h2 {
+      color: #ffa500;
+      text-shadow: 1px 1px 3px #000000;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      text-align: justify;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    li {
+      margin: 10px 0;
+    }
+    img {
+      max-width: 100%;
+      border: 3px solid #ff4500;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+      display: block;
+      margin: 30px auto;
+      transition: transform 0.3s;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c2c2c;
+      border-top: 3px solid #ff4500;
+    }
+    a {
+      color: #ffa500;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #ffa500;
+    }
+    .interactive {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .button {
+      background-color: #ffa500;
+      color: #121212;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 1em;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .button:hover {
+      background-color: #ff4500;
+      color: #ffffff;
+    }
+    .hidden-info {
+      display: none;
+      margin-top: 20px;
+      text-align: justify;
+    }
+  </style>
+  <script>
+    function toggleInfo() {
+      var info = document.getElementById('additional-info');
+      if (info.style.display === 'none' || info.style.display === '') {
+        info.style.display = 'block';
+      } else {
+        info.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Hanako-san</h1>
+  </header>
+  <section>
+    <p>
+      Hanako-san es una famosa leyenda urbana japonesa sobre un espíritu que acecha los baños escolares. La leyenda cuenta que si vas a un baño escolar y golpeas tres veces en la tercera cabina, diciendo "¿Hanako-san, estás ahí?", ella responderá afirmativamente. Se dice que Hanako-san es el espíritu de una niña que murió en el baño de la escuela, y puede aparecer como una niña joven con una falda roja. La leyenda varía en diferentes versiones, algunas retratando a Hanako-san como malévola y otras como inofensiva o incluso benevolente. Es una historia de miedo popular en la cultura japonesa, a menudo contada a los niños para asustarlos.
+    </p>
+    <h2>Variaciones</h2>
+    <p>
+      Hanako-san, al igual que ocurre con muchas otras leyendas, sufre variaciones dependiendo del área o escuela, y es una leyenda muy extendida a través de Japón. Su aspecto también puede cambiar, pero suele ser una chica joven de pelo corto y viste una falda roja. Y su personalidad consista en un espíritu maligno, bondadoso o simplemente travieso. Aquí algunas variaciones dependiendo de las localizaciones:
+    </p>
+    <ul>
+      <li><strong>Prefectura de Yamagata:</strong> Después de que Hanako-san conteste, si se entra en el baño, se encontrará un lagarto de tres cabezas que fingía la voz de la chica y este te comerá.</li>
+      <li><strong>Prefectura de Iwate:</strong> Tras llamar a Hanako-san, una enorme mano blanca emerge de la puerta.</li>
+      <li><strong>Prefectura de Kanagawa:</strong> Después de llamar, aparecerá una mano manchada de sangre.</li>
+    </ul>
+    <img src="3030.jpg" alt="Hanako-san leyenda">
+    <div class="interactive">
+      <button class="button" onclick="toggleInfo()">Más Información</button>
+      <div id="additional-info" class="hidden-info">
+        <h2>Origen de la Leyenda</h2>
+        <p>
+          La leyenda de Hanako-san comenzó a circular en la década de 1950, aunque sus orígenes exactos son inciertos. Algunas versiones de la historia sugieren que Hanako-san era una niña que murió durante la Segunda Guerra Mundial, mientras que otras versiones afirman que era una víctima de bullying escolar que se suicidó en el baño. La historia ha sido adaptada en numerosos medios, incluyendo películas, series de televisión y manga.
+        </p>
+        <h2>Impacto Cultural</h2>
+        <p>
+          Hanako-san ha tenido un gran impacto en la cultura popular japonesa, convirtiéndose en un tema recurrente en historias de terror y folclore urbano. Es común que los niños japoneses se desafíen entre sí para invocar a Hanako-san en los baños de las escuelas, similar a otras leyendas urbanas como Bloody Mary en Occidente. La historia de Hanako-san sirve como un recordatorio de los miedos y ansiedades presentes en la vida escolar y la cultura juvenil japonesa.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <a href="proyecto.html">Regresa a la página principal</a>
+    <p>&copy; Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

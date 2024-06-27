@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("9+9+9.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @keyframes backgroundAnimation {
+      0% {
+        filter: brightness(0.8) blur(0px);
+      }
+      50% {
+        filter: brightness(0.5) blur(3px);
+      }
+      100% {
+        filter: brightness(0.8) blur(0px);
+      }
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 300px;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .mirror-text {
+      font-size: 24px;
+      position: relative;
+      color: #f0f0f0;
+      margin: 20px 0;
+    }
+
+    .mirror-text::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      color: #f0f0f0;
+      opacity: 0.5;
+      transform: scaleY(-1);
+    }
+
+    .image-container {
+      overflow: hidden;
+      border-radius: 10px;
+      width: 300px;
+      height: 200px;
+      margin: 20px auto;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .image-container:hover img {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>"Enigmas Ocultos de Asia: Leyendas y Misterios que Desafían la Imaginación"</h1>
+  <div class="card">
+    <h2>Introducción</h2>
+    <p>En el vasto y diverso continente asiático, se esconden secretos tan antiguos como las montañas y tan profundos como los océanos. "Enigmas Ocultos de Asia" es un viaje a través de leyendas y misterios que han desafiado a la imaginación y la comprensión humana durante siglos. Desde los templos secretos de Angkor Wat, envueltos en la selva camboyana, hasta las míticas criaturas que habitan las tradiciones del Japón antiguo, cada rincón de Asia guarda historias que esperan ser descubiertas.</p>
+    <p>Exploraremos las sombras del Himalaya, donde se dice que el Yeti, el escurridizo hombre de las nieves, todavía vaga por las cumbres heladas. Nos adentraremos en las profundas y tranquilas aguas del Lago Baikal, en Siberia, hogar de misteriosas leyendas sobre espíritus acuáticos y civilizaciones sumergidas. En las desoladas extensiones del desierto de Gobi, buscaremos rastros del Olgoi-Khorkhoi, el mítico gusano de la muerte de Mongolia, cuya mera mención causa temor.</p>
+    <p>Cada capítulo de esta aventura revela un nuevo misterio, una nueva historia que nos hace cuestionar lo que sabemos y anhelar descubrir más. Desde los relatos de los samuráis fantasmas en Japón hasta las inexplicables luces danzantes en los cielos de Tailandia, "Enigmas Ocultos de Asia" nos invita a abrir nuestras mentes y corazones a lo desconocido, a aceptar que el mundo está lleno de maravillas aún por entender.</p>
+  </div>
+
+  <div class="image-container">
+    <img src="222.jpg" alt="Imagen de ejemplo">
+  </div>
+
+  <div class="card">
+    <h2>Leyendas y Misterios de Asia</h2>
+    <p>Asia, un continente rico en historia y diversidad cultural, es también un tesoro de leyendas y misterios que han fascinado a la humanidad durante siglos. Aquí te presento algunas de las leyendas y misterios más intrigantes de Asia.</p>
+    <a href="proyecto.html" style="color: #f06595;">Regresa a la página principal</a>
+  </div>
+
+  <div class="image-container">
+    <img src="samshin.jpg" alt="Imagen de ejemplo">
+  </div>
+</body>
+</html>

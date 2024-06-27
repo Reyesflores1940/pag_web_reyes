@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terror Oriental - Kuchisake-onna</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2e2b2b;
+      color: #faf4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #000000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #ff4500;
+    }
+    h1 {
+      margin: 0;
+      font-size: 3em;
+      color: #ff4500;
+      text-shadow: 2px 2px 5px #000000;
+    }
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: #3a3a3a;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+    }
+    h2 {
+      color: #ff4500;
+      text-shadow: 1px 1px 3px #000000;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      text-align: justify;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    li {
+      margin: 10px 0;
+    }
+    img {
+      max-width: 100%;
+      border: 3px solid #ff4500;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+      display: block;
+      margin: 30px auto;
+      transition: transform 0.3s;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c2c2c;
+      border-top: 3px solid #ff4500;
+    }
+    a {
+      color: #ff4500;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #ff4500;
+    }
+    .interactive {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .button {
+      background-color: #ff4500;
+      color: #121212;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 1em;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .button:hover {
+      background-color: #ffffff;
+      color: #ff4500;
+    }
+    .hidden-info {
+      display: none;
+      margin-top: 20px;
+      text-align: justify;
+    }
+  </style>
+  <script>
+    function toggleInfo() {
+      var info = document.getElementById('additional-info');
+      if (info.style.display === 'none' || info.style.display === '') {
+        info.style.display = 'block';
+      } else {
+        info.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Kuchisake-onna, la mujer de la cara desfigurada</h1>
+  </header>
+  <section>
+    <p>
+      Kuchisake-onna, también conocida como "la mujer de la boca cortada", es una figura legendaria del folclore japonés que ha generado miedo y fascinación durante décadas. Su historia se remonta a tiempos antiguos, pero se ha mantenido viva a lo largo de los años gracias a su presencia en la cultura popular japonesa y su posterior difusión a nivel internacional.
+    </p>
+    <p>
+      La leyenda de Kuchisake-onna cuenta la historia de una mujer hermosa que vivió en el Japón feudal. Según la historia, esta mujer fue infiel a su esposo, quien, en un ataque de ira, la mutiló cortándole la boca de oreja a oreja. Después de su muerte, su espíritu regresó como un yokai, una entidad sobrenatural, con una apariencia terrorífica y una obsesión particular por la belleza facial.
+    </p>
+    <p>
+      Según la leyenda, Kuchisake-onna se presenta como una mujer atractiva con un vendaje que cubre su rostro. Se dice que ella se acerca a sus víctimas, generalmente niños, en la noche y les pregunta si la consideran hermosa. Si la respuesta es afirmativa, Kuchisake-onna revela su rostro, mostrando una boca grotescamente cortada de oreja a oreja, y pregunta: "¿Y ahora?".
+    </p>
+    <p>
+      En este punto, las opciones de la víctima son limitadas y espeluznantes: si vuelven a responder afirmativamente, Kuchisake-onna los cortará a la misma medida que ella; si responden negativamente, los matará de inmediato. Algunas versiones de la leyenda sugieren que una respuesta evasiva puede desconcertar a Kuchisake-onna lo suficiente como para que la víctima pueda escapar.
+    </p>
+    <img src="2020.jpg" alt="Kuchisake-onna leyenda">
+    <div class="interactive">
+      <button class="button" onclick="toggleInfo()">Más Información</button>
+      <div id="additional-info" class="hidden-info">
+        <h2>Origen de la Leyenda</h2>
+        <p>
+          La leyenda de Kuchisake-onna comenzó a circular en la década de 1970, aunque sus orígenes exactos son inciertos. Algunas versiones de la historia sugieren que Kuchisake-onna era una mujer víctima de una cirugía plástica fallida, mientras que otras versiones afirman que era una víctima de un accidente de tráfico.
+        </p>
+        <h2>Impacto Cultural</h2>
+        <p>
+          Kuchisake-onna ha tenido un gran impacto en la cultura popular japonesa, convirtiéndose en un tema recurrente en historias de terror y folclore urbano. Es común que los niños japoneses se desafíen entre sí para invocar a Kuchisake-onna, similar a otras leyendas urbanas como Bloody Mary en Occidente. La historia de Kuchisake-onna sirve como un recordatorio de los miedos y ansiedades presentes en la vida cotidiana y la cultura juvenil japonesa.
+        </p>
+        <h2>Adaptaciones Modernas</h2>
+        <p>
+          La leyenda de Kuchisake-onna ha sido adaptada en numerosos medios, incluyendo películas, programas de televisión, libros y videojuegos. Estas adaptaciones a menudo reinterpretan la historia para reflejar los miedos contemporáneos y explorar temas como la belleza, la venganza y la obsesión.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <a href="proyecto.html">Regresa a la página principal</a>
+    <p>&copy; Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

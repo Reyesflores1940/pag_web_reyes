@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terror Oriental - Jikininki</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #faf4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #291313;
+      padding: 30px;
+      text-align: center;
+      border-bottom: 3px solid #ff4500;
+    }
+    h1 {
+      margin: 0;
+      font-size: 3em;
+      color: #ff4500;
+      text-shadow: 2px 2px 5px #000000;
+    }
+    section {
+      padding: 30px;
+      margin: 20px;
+      background-color: #3a3a3a;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+    }
+    h2 {
+      color: #ff4500;
+      text-shadow: 1px 1px 3px #000000;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      text-align: justify;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    li {
+      margin: 10px 0;
+    }
+    img {
+      max-width: 100%;
+      border: 3px solid #ff4500;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+      display: block;
+      margin: 30px auto;
+      transition: transform 0.3s;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c2c2c;
+      border-top: 3px solid #ff4500;
+    }
+    a {
+      color: #ff4500;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #ff4500;
+    }
+    .interactive {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .button {
+      background-color: #ff4500;
+      color: #121212;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 1em;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .button:hover {
+      background-color: #ffffff;
+      color: #ff4500;
+    }
+    .hidden-info {
+      display: none;
+      margin-top: 20px;
+      text-align: justify;
+    }
+  </style>
+  <script>
+    function toggleInfo() {
+      var info = document.getElementById('additional-info');
+      if (info.style.display === 'none' || info.style.display === '') {
+        info.style.display = 'block';
+      } else {
+        info.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Jikininki</h1>
+  </header>
+  <section>
+    <p>
+      En el budismo japonés, los jikininki (食人鬼 fantasmas comedores de hombres) son los espíritus de los humanos avariciosos, egoístas o impíos que son malditos después de la muerte para buscar y comer cadáveres humanos. Llevan a cabo tales actos durante la noche, en la procura de cuerpos muertos recientes y ofrendas de comida dejadas para los muertos. Algunas veces, también saquean los cuerpos que comen para encontrar objetos de valor que usan para sobornar a oficiales locales a cambio de que los dejen en paz.
+    </p>
+    <p>
+      Salen a merodear por las noches para profanar las tumbas y alimentarse de cadáveres. Son zombis, es decir muertos vivos. A menudo, se dicen que los jikininki se parecen a cadáveres en descomposición, quizás con algunas marcas no humanas como garras afiladas u ojos brillantes. Son una terrible visión, y cualquier humano que vea uno quedará congelado por el miedo. De cualquier manera, bastantes historias les dan la habilidad de disfrazarse mágicamente como un ser humano normal y hasta llevar "vidas" normales durante el día.
+    </p>
+    <img src="3434.jpg" alt="Jikininki">
+    <div class="interactive">
+      <button class="button" onclick="toggleInfo()">Más Información</button>
+      <div id="additional-info" class="hidden-info">
+        <h2>Origen de la Leyenda</h2>
+        <p>
+          La leyenda de los jikininki se origina en las antiguas tradiciones budistas japonesas. Se cree que estos espíritus son el resultado de malas acciones realizadas en vida, como la avaricia extrema y el egoísmo. Después de la muerte, estos individuos son condenados a una existencia de insaciable hambre por carne humana.
+        </p>
+        <h2>Historias Populares</h2>
+        <p>
+          Una de las historias más conocidas sobre jikininki es la del monje Muso Kokushi. En su viaje, Muso pasó la noche en un pequeño pueblo donde fue testigo de los rituales funerarios locales. Durante la noche, vio a un jikininki devorando el cuerpo del difunto. Al confrontar al espíritu, este confesó ser el antiguo sacerdote del pueblo, condenado a su forma actual por su codicia en vida.
+        </p>
+        <h2>Representaciones Culturales</h2>
+        <p>
+          Los jikininki han aparecido en varias formas de medios japoneses, incluyendo películas, series de televisión y literatura. Su representación varía, pero comúnmente se les muestra como entidades grotescas y aterradoras que reflejan los temores humanos sobre la muerte y la corrupción.
+        </p>
+        <h2>Simbolismo</h2>
+        <p>
+          En la mitología japonesa, los jikininki simbolizan las consecuencias de la avaricia y la falta de compasión. Sirven como advertencia sobre los peligros de vivir una vida egoísta y sin consideración por los demás. Además, reflejan el temor a la descomposición y la pérdida de la humanidad después de la muerte.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <a href="proyecto.html">Regresa a la página principal</a>
+    <p>&copy; Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
